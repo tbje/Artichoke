@@ -1,0 +1,25 @@
+<lift:surround with="default" at="content">
+<head>
+<style type="text/css">
+    tr.odd {background-color: #d0dafd;}
+    tr.even {background-color: #e8edff}
+    tr.content {background-color: #eff2ff; }
+    td.content {padding-left: 40px;
+        background: #eff2ff url(img/red.bmp) repeat-y 30px 0;}
+</style>
+<script>
+function toggleDisplay(id) {
+    if (document.getElementById('el_' + id).style.display!='none') {
+        document.getElementById('el_' + id).style.display='none'; 
+    } else {
+        document.getElementById('el_' + id).style.display=''; 
+    }
+}
+</script>
+</head>
+
+	<h1 style="display:inline; margin-right:10px;">Artichoke</h1><lift:Controls/>
+	<lift:comet type="Artichoke" />
+
+</lift:surround>
+
